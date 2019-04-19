@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<gpx 
+	version="1.1" 
+	creator="ee.aegrel.gadgetbridge.GBApplication 0.32.1.1" xsi:schemaLocation="http://www.topografix.com/GPXstructure.GPX/1/1 http://www.topografix.com/GPXstructure.GPX/1/1/gpx.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1">
+	<metadata>
+		<name>This is test GPX file</name>
+		<author>
+			<name>Me</name>
+		</author>
+		<time>2019-02-13T21:01:15+02:00</time>
+	</metadata>
+	<trk>
+		<trkseg>
+			<trkpt lon="1" lat="1">
+				<ele>1</ele>
+				<time>1</time>
+			</trkpt>
+			<trkpt lon="2" lat="2"><ele>2</ele><time>2019-02-11T12:46:38Z</time></trkpt>
+			<trkpt lon="3" lat="3"><ele>3</ele><time>2019-02-11T12:46:39Z</time></trkpt>
+			<trkpt lon="33.241302" lat="49.064247"><ele>98.000000</ele><time>2019-02-11T12:46:40Z</time><extensions><gpxtpx:TrackPointExtension><gpxtpx:hr>106</gpxtpx:hr></gpxtpx:TrackPointExtension></extensions></trkpt>
+			<trkpt lon="33.241282" lat="49.064218"><ele>98.000000</ele><time>2019-02-11T12:46:41Z</time><extensions><gpxtpx:TrackPointExtension><gpxtpx:hr>106</gpxtpx:hr></gpxtpx:TrackPointExtension></extensions></trkpt>
+			<trkpt lon="33.241260" lat="49.064188"><ele>98.000000</ele><time>2019-02-11T12:46:42Z</time><extensions><gpxtpx:TrackPointExtension><gpxtpx:hr>106</gpxtpx:hr></gpxtpx:TrackPointExtension></extensions></trkpt>
+			<trkpt lon="33.243757" lat="49.064950"><ele>74.000000</ele><time>2019-02-11T13:23:07Z</time><extensions><gpxtpx:TrackPointExtension><gpxtpx:hr>156</gpxtpx:hr></gpxtpx:TrackPointExtension></extensions></trkpt>
+		</trkseg>
+	</trk>
+</gpx>
