@@ -5,6 +5,10 @@ public class TrkPoint {
     private double ele;
     private String time;
 
+    public double getLon(){return lon;}
+    public double getLat(){return lat;}
+    public double getEle(){return ele;}
+
     public TrkPoint(String lon, String lat, String ele, String time){
         this.lon = Double.parseDouble(lon);
         this.lat = Double.parseDouble(lat);

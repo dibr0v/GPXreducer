@@ -1,5 +1,6 @@
 +read points
++calculate distances between points
+
 -operate date/time
--calculate distances between points
 -invent avg formula
 -remove junk points
