@@ -1,4 +1,9 @@
+import java.time.Duration;
+import java.time.Period;
 import java.util.ArrayList;
+
+import static java.time.temporal.ChronoUnit.DAYS;
+import static java.time.temporal.ChronoUnit.SECONDS;
 
 public class CoordsUtility {
 
@@ -18,9 +23,7 @@ public class CoordsUtility {
         double temp = Math.sin(Δφ/2) * Math.sin(Δφ/2) + Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ/2) * Math.sin(Δλ/2);
         temp = 2 * Math.atan2(Math.sqrt(temp), Math.sqrt(1-temp));
 
-        double result = R * temp;
-
-        return result;
+        return R * temp;
     }
 
     public static double calcDistance(ArrayList<TrkPoint> points){
@@ -32,6 +35,20 @@ public class CoordsUtility {
             temp = points.get(i);
         }
 
+        return result;
+    }
+
+    public static long calcDuration(TrkPoint a, TrkPoint b){
+
+        long sec_between = SECONDS.between(a.getDate(), b.getDate());
+        long seconds_between = Duration.between(a.getTime(), b.getTime()).getSeconds();
+        return sec_between+seconds_between;
+    }
+
+    public static long calcDuration(ArrayList<TrkPoint> points){
+        long result = 0;
+        for(int i = 1 ; i < points.size(); i++)
+            result += calcDuration(points.get(i-1), points.get(i));
         return result;
     }
 }

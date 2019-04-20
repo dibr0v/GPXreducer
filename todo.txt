@@ -1,6 +1,12 @@
 +read points
 +calculate distances between points
++calculate time difference between points
++parse trkpoint with extension
 
--operate date/time
--invent avg formula
+-calculate correct time difference between points
+-write new gpx
 -remove junk points
+-invent optimizing algorithm
+    -remove zero time points
+    -remove find&remove "stops"
+    -round points sliding average

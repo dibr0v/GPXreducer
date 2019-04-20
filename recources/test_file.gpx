@@ -11,16 +11,12 @@
 	</metadata>
 	<trk>
 		<trkseg>
-			<trkpt lon="1" lat="1">
-				<ele>1</ele>
-				<time>1</time>
-			</trkpt>
 			<trkpt lon="2" lat="2"><ele>2</ele><time>2019-02-11T12:46:38Z</time></trkpt>
 			<trkpt lon="3" lat="3"><ele>3</ele><time>2019-02-11T12:46:39Z</time></trkpt>
 			<trkpt lon="33.241302" lat="49.064247"><ele>98.000000</ele><time>2019-02-11T12:46:40Z</time><extensions><gpxtpx:TrackPointExtension><gpxtpx:hr>106</gpxtpx:hr></gpxtpx:TrackPointExtension></extensions></trkpt>
 			<trkpt lon="33.241282" lat="49.064218"><ele>98.000000</ele><time>2019-02-11T12:46:41Z</time><extensions><gpxtpx:TrackPointExtension><gpxtpx:hr>106</gpxtpx:hr></gpxtpx:TrackPointExtension></extensions></trkpt>
 			<trkpt lon="33.241260" lat="49.064188"><ele>98.000000</ele><time>2019-02-11T12:46:42Z</time><extensions><gpxtpx:TrackPointExtension><gpxtpx:hr>106</gpxtpx:hr></gpxtpx:TrackPointExtension></extensions></trkpt>
-			<trkpt lon="33.243757" lat="49.064950"><ele>74.000000</ele><time>2019-02-11T13:23:07Z</time><extensions><gpxtpx:TrackPointExtension><gpxtpx:hr>156</gpxtpx:hr></gpxtpx:TrackPointExtension></extensions></trkpt>
+			<trkpt lon="33.243757" lat="49.064950"><ele>74.000000</ele><time>2019-02-12T13:23:07Z</time><extensions><gpxtpx:TrackPointExtension><gpxtpx:hr>156</gpxtpx:hr></gpxtpx:TrackPointExtension></extensions></trkpt>
 		</trkseg>
 	</trk>
 </gpx>

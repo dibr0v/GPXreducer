@@ -11,6 +11,10 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * Parses points from *.gpx file according to
+ * http://www.topografix.com/GPX/1/1/
+ */
 public class GPXparser {
 
     public ArrayList<TrkPoint> parse(String path){
@@ -32,7 +36,8 @@ public class GPXparser {
         if(nodeList.getLength() == 0)
             return null;
         ArrayList<TrkPoint> points = new ArrayList<>();
-        String lon, lat, ele, time;
+        String lon, lat, ele, datetime;
+        Node extensions;
         for(int i = 0; i < nodeList.getLength(); i++){
             Node node = nodeList.item(i);
             if(node.getNodeType() == Node.ELEMENT_NODE){
@@ -40,13 +45,23 @@ public class GPXparser {
                 lon = element.getAttribute("lon");
                 lat = element.getAttribute("lat");
                 ele = element.getElementsByTagName("ele").item(0).getTextContent();
-                time = element.getElementsByTagName("time").item(0).getTextContent();
+                datetime = element.getElementsByTagName("time").item(0).getTextContent();
+
+                /*
+                <extensions>
+                    <gpxtpx:TrackPointExtension>
+                        <gpxtpx:hr>112</gpxtpx:hr>
+                        ...
+                    </gpxtpx:TrackPointExtension>
+                </extensions>
+                */
+                extensions = element.getElementsByTagName("extensions").item(0);
 
                 if(     !lon.isEmpty() &&
                         !lat.isEmpty() &&
                         !ele.isEmpty() &&
-                        !time.isEmpty())
-                points.add(new TrkPoint(lon, lat, ele, time));
+                        !datetime.isEmpty())
+                points.add(new TrkPoint(lon, lat, ele, datetime, extensions));
             }
         }
         return points;
